@@ -2,7 +2,7 @@
 -- 강수빈
 -- ----------------------------------------------
 
--- 계정 생성 
+-- 계정 생성 (모든 IP에서 접속 가능)
 create user 'book'@'%' identified by '1234';
 
 -- DB 생성
@@ -15,6 +15,6 @@ create database book_db
 use book_db;
 show databases;
 
--- 권한 주기
+-- 권한 주기 (모든 권한)
 grant all privileges on book_db.* to 'book'@'%';
 
